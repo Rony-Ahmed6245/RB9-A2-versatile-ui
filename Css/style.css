@@ -1,7 +1,202 @@
 /* common css  */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* background-color: black; */
+    color: white;
 }
 
+body {
+    background: #000;
+}
+
+
+/* =================================================
+             navbar css start  
+====================================================*/
+.navber-repar {
+    /* border: 1px solid red; */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hamber {
+    display: none;
+}
+
+.logo {
+    color: tomato;
+    font-size: 36px;
+}
+
+.menu ul {
+    display: flex;
+    border: 1px solid gray;
+    border-radius: 50px;
+}
+
+.menu ul li {
+    list-style: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    color: white;
+}
+
+.menu ul li:hover {
+    list-style: none;
+    background-color: tomato;
+    padding: 10px 20px;
+    border-radius: 50px;
+    color: white;
+}
+
+/*=================================================
+               banner css start  
+===================================================*/
+.all-bg {
+    background: linear-gradient(0deg, black, rgb(47, 47, 47), black);
+}
+
+.banner-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    padding-top: 50px;
+    margin-top: -80px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.banner-content {
+    width: 50%;
+}
+
+.banner-text {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.banner-text h1 {
+    font-size: 60px;
+}
+
+.banner-text p {
+    color: gray;
+}
+
+.banner-img-content {
+    margin-right: 40px;
+}
+
+.banner-btn {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+}
+
+.banner-btn .btn1 {
+    color: white;
+    background-color: tomato;
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: none;
+    font-weight: 600;
+}
+
+.banner-btn .btn2 {
+    color: white;
+    background-color: transparent;
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: 2px solid white;
+    font-weight: 600;
+}
+
+.banner-img {
+    position: relative;
+}
+
+.glass1 {
+    position: absolute;
+    top: 30%;
+    right: 0;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+
+}
+
+.glass2 {
+    position: absolute;
+    top: 80%;
+    left: -20%;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(2.5px);
+    -webkit-backdrop-filter: blur(2.5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.circle {
+    width: 40px;
+    height: 40px;
+    background: tomato;
+    border-radius: 50%;
+}
+
+
+
+/*=================================================
+           responsive design    
+===================================================*/
+@media screen and (max-width:500px) {
+
+    /* navber css  */
+    .menu {
+        display: none;
+    }
+
+    .hamber {
+        display: block;
+    }
+
+    /* banner css  */
+    .banner-section {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+    }
+
+    .banner-content {
+        width: 100%;
+    }
+    .banner-img-content {
+        margin-right: 0px;
+    }
+
+    .glass2 {
+       
+        left: 0%;
+
+    }
+}
