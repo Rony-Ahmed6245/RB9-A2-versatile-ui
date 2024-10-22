@@ -1,4 +1,6 @@
 /* common css  */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -9,6 +11,16 @@
 
 body {
     background: #000;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+
+}
+
+span{
+    font-family: "Italianno", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 78px;
 }
 
 
@@ -59,7 +71,7 @@ body {
                banner css start  
 ===================================================*/
 .all-bg {
-    background: linear-gradient(0deg, black, rgb(47, 47, 47), black);
+    background: linear-gradient(0deg,black, rgb(17, 17, 17), rgba(119, 119, 119, 0));
 }
 
 .banner-section {
@@ -84,11 +96,12 @@ body {
 }
 
 .banner-text h1 {
-    font-size: 60px;
+    font-size: 78px;
+    font-weight: 900;
 }
 
 .banner-text p {
-    color: gray;
+    color: rgba(255, 255, 255, 0.5);
 }
 
 .banner-img-content {
@@ -163,7 +176,12 @@ body {
     border-radius: 50%;
 }
 
-
+.glass1 h1{
+    font-size: 30px;
+}
+.glass2 h1{
+    font-size: 30px;
+}
 
 /*=================================================
            responsive design    
@@ -193,7 +211,13 @@ body {
     .banner-img-content {
         margin-right: 0px;
     }
-
+    .banner-text h1 {
+        font-size: 36px;
+        font-weight: 900;
+    }
+    span{
+        font-size: 48px;
+    }
     .glass2 {
        
         left: 0%;
