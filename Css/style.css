@@ -1,6 +1,7 @@
 /* common css  */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -16,13 +17,17 @@ body {
 
 }
 
-span{
+span {
     font-family: "Italianno", cursive;
     font-weight: 400;
     font-style: normal;
     font-size: 78px;
 }
 
+.common-width {
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
 /* =================================================
              navbar css start  
@@ -71,7 +76,7 @@ span{
                banner css start  
 ===================================================*/
 .all-bg {
-    background: linear-gradient(0deg,black, rgb(17, 17, 17), rgba(119, 119, 119, 0));
+    background: linear-gradient(0deg, black, rgb(17, 17, 17), rgba(119, 119, 119, 0));
 }
 
 .banner-section {
@@ -176,11 +181,76 @@ span{
     border-radius: 50%;
 }
 
-.glass1 h1{
+.glass1 h1 {
     font-size: 30px;
 }
-.glass2 h1{
+
+.glass2 h1 {
     font-size: 30px;
+}
+
+/*=================================================
+           responsive design    
+===================================================*/
+.habit-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.habit-text div h1 {
+    margin-bottom: 10px;
+    font-size: 32px;
+    font-weight: 900;
+}
+.habit-text div p {
+    color: rgba(255, 255, 255, 0.5);
+
+}
+
+.habit-text div {
+    width: 50%;
+}
+
+.cards {
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center; */
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+
+    margin-top: 50px;
+}
+
+.card {
+    padding: 20px;
+}
+
+.card-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.card img {
+    border-radius: 50%;
+    text-align: center;
+}
+
+.card-title {
+    text-align: center;
+    margin-bottom: 6px;
+}
+
+.card-dsc {
+
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
 }
 
 /*=================================================
@@ -208,19 +278,33 @@ span{
     .banner-content {
         width: 100%;
     }
+
     .banner-img-content {
         margin-right: 0px;
     }
+
     .banner-text h1 {
         font-size: 36px;
         font-weight: 900;
     }
-    span{
+
+    span {
         font-size: 48px;
     }
+
     .glass2 {
-       
+
         left: 0%;
 
+    }
+
+    /* habit  */
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .habit-text div {
+        width: 100%;
+        padding: 0 10px;
     }
 }
