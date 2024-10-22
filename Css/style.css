@@ -478,7 +478,7 @@ table th {
 .box {
     position: absolute;
     top: 30%;
-    left: -2%;
+    left: 0;
     width: 100px;
     height: 100px;
     background: tomato;
@@ -488,7 +488,7 @@ table th {
 .box2 {
     position: absolute;
     top: 70%;
-    right: -2%;
+    right: 0;
     width: 100px;
     height: 100px;
     background: tomato;
@@ -557,7 +557,6 @@ table th {
     text-transform: uppercase;
 }
 
-.price-card ul {}
 
 .price-card ul li {
     color: gray;
@@ -796,3 +795,4 @@ table th {
         height: 170px;
     }
 }
+
