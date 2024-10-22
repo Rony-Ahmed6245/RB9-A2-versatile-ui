@@ -44,6 +44,7 @@ span {
 
 .hamber {
     display: none;
+    font-size: 30px;
 }
 
 .logo {
@@ -197,7 +198,7 @@ span {
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-top: 100px;
+    margin: 50px 0 20px 0;
 }
 
 .habit-text div h1 {
@@ -291,7 +292,7 @@ span {
     border-radius: 20px;
 }
 
-.run-btn{
+.run-btn {
     color: white;
     background-color: tomato;
     padding: 10px 40px;
@@ -301,9 +302,82 @@ span {
 }
 
 /*=================================================
+           team section css   
+===================================================*/
+.teams {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 18px;
+}
+
+.team {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+
+}
+
+.team-card img {
+    width: 100%;
+    border-radius: 18px;
+    height: 320px;
+}
+
+.team-card {
+    position: relative;
+}
+
+.team-text {
+    position: absolute;
+    top: 70%;
+    left: 10%;
+}
+
+.team-text p {
+    color: gray;
+    margin-top: 10px;
+    text-transform: capitalize;
+}
+
+
+
+
+
+/*=================================================
+          footer design    
+===================================================*/
+.main-footer{
+    background: rgba(255, 255, 255, 0.1);
+    margin-top: 100px;
+}
+.footer{
+    padding:20px 10px;
+    display: grid;
+    grid-template-columns: 2fr 1fr  1fr;
+    gap: 20px;
+    border-bottom: 1px solid gray;
+    padding-bottom: 50px;
+}
+.footer div p {
+    margin-top: 20px;
+    color: gray;
+}
+.get ul li{
+    list-style: none;
+    margin-top: 10px;
+    color: rgba(255, 255, 255, 0.5);
+
+}
+.bottom-footer p{
+ text-align: center;
+ padding: 20px;
+ color: rgba(255, 255, 255, 0.5);
+}
+
+/*=================================================
            responsive design    
 ===================================================*/
-@media screen and (max-width:500px) {
+  @media screen and (max-width:576px) {
 
     /* navber css  */
     .menu {
@@ -355,6 +429,7 @@ span {
         width: 100%;
         padding: 0 10px;
     }
+
     /* run section  */
     .run-section {
         border-radius: 18px;
@@ -368,5 +443,28 @@ span {
         gap: 40px;
         flex-direction: column;
         margin: 0 10px;
+    }
+
+    /* team section  */
+    .teams {
+        margin: 0 10px;
+
+    }
+
+    .team {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+        padding: 20px;
+
+    }
+    /* footer  */
+    .footer{
+        padding:20px 10px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+        border-bottom: 1px solid gray;
+        padding-bottom: 50px;
     }
 }
